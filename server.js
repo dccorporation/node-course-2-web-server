@@ -74,6 +74,21 @@ app.get('/projects', (request, response) => {
    });
 
 });
+app.get('/json-data', (request, response) => {
+   response.send({
+     "name": "Deep",
+      "likes":[
+       "biking",
+       "travel"
+     ],
+      "email": "deepchawla.1993@gmail.com",
+      "email2": "deepchawla.1993@Outlook.com",
+
+    }
+);
+   });
+
+
 
 app.get('/bad', (request, response) => {
   response.send({
